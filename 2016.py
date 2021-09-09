@@ -5,3 +5,10 @@
 제한 조건
 2016년은 윤년입니다.
 2016년 a월 b일은 실제로 있는 날입니다. (13월 26일이나 2월 45일같은 날짜는 주어지지 않습니다)'''
+import datetime
+def solution(a, b):
+    week = ["MON","TUE","WED","THU","FRI","SAT","SUN"] #출력될 요일
+    day = datetime.date(2016, a, b).weekday()
+    answer = week[day]
+    return answer
+print(solution(5, 24))
