@@ -11,4 +11,4 @@ def solution(a, b):
     day = datetime.date(2016, a, b).weekday()
     answer = week[day]
     return answer
-print(solution(5, 24))
+print(solution(5, 24)) #TUE
