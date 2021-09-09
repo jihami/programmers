@@ -4,7 +4,10 @@
 arr은 길이 1 이상인 배열입니다.
 인덱스 i, j에 대해 i ≠ j이면 arr[i] ≠ arr[j] 입니다.'''
 def solution(arr):
-    answer = []
-    return answer
-print(solution([4,3,2,1]))
-print(solution([-1]))
+    if len(arr)>1 :
+        arr.remove(min(arr))
+        return arr
+    else:
+        return [-1]
+print(solution([4,3,2,1])) #[4,3,2]
+print(solution([10])) #[-1]
