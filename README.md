@@ -1,4 +1,4 @@
-# # 간단정리
+# 간단정리
 ### 함수
  - 내장함수
     - min() 제일 작은 값 찾음 [제일 작은 수 제거하기.py]
@@ -13,13 +13,13 @@
 - 모듈
   - datetime
    - date 
-     - datetime.date 객체는 년,월,일을 인수로 전달하여 생성 가능
-     - today() 오늘 날짜 구함 ex : today=date.today() # 앞에있는 today는 변수
-     - year 년을 구함 : toay.year
-     - month 월을 구함 ex : toay.month
-     - day 일을 구함 ex : toay.day
-     - weekday() 요일을 구함,월요일부터 0으로 반환 ex : toay.weekday()
-     - repalce() 객체의 년,월,일을 바꿈 ex : date1.replace(day=31)
+    - datetime.date 객체는 년,월,일을 인수로 전달하여 생성 가능
+    - today() 오늘 날짜 구함 ex : today=date.today() # 앞에있는 today는 변수
+    - year 년을 구함 : toay.year
+    - month 월을 구함 ex : toay.month
+    - day 일을 구함 ex : toay.day
+    - weekday() 요일을 구함,월요일부터 0으로 반환 ex : toay.weekday()
+    - repalce() 객체의 년,월,일을 바꿈 ex : date1.replace(day=31)
      
  <!--  - time
    - datetime
