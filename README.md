@@ -12,7 +12,7 @@
     - reversed() 값을 뒤집는 함수, 값을 반환하지 않고 변환한다. [자연수 뒤집어 배열로 만들기.py]
 - 모듈
   - datetime
-   - date : 
+   - date 
      - datetime.date 객체는 년,월,일을 인수로 전달하여 생성 가능
      - today() 오늘 날짜 구함 ex : today=date.today() # 앞에있는 today는 변수
      - year 년을 구함 : toay.year
