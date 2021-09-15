@@ -12,13 +12,20 @@ n	m	return
 
 입출력 예 #2
 자연수 2와 5의 최대공약수는 1, 최소공배수는 10이므로 [1, 10]을 리턴해야 합니다.'''
-def solution(n, m):
-    answer = []
-    return answer
+def gcd(n,m):
+    mod = m % n
+    if mod != 0:
+        m, n = n, mod
+        return gcd(n, m)
+    else:
+        return n
+
+def solution(n,m):
+    return [gcd(n,m),int(m*n/gcd(n,m))]
 print(solution(3,12))
 print(solution(2,5))
 # 아 나 머리아파 죽을거 같음,,, 오늘 마크다운 정리 했으니깐 이거 내일풀게,,,
-
+#야 그래 놓고 너 안풀었잖아,,,, 집가면 진짜 열심히 해라,,,
 '''
 유클리드 호제법이용
 유클리드 호제법 : 두 수의 최대공약수를 구하는 알고리즘이다.
