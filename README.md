@@ -1,4 +1,5 @@
-# 간단정리
+# 코딩테스트 연습 
+<!--# 간단정리
 ### 함수
  - 내장함수
     - min() 제일 작은 값 찾음 [제일 작은 수 제거하기.py]
@@ -21,6 +22,6 @@
      - weekday() 요일을 구함,월요일부터 0으로 반환 ex : toay.weekday()
      - repalce() 객체의 년,월,일을 바꿈 ex : date1.replace(day=31)
      
- <!--  - time
+  - time
    - datetime
    https://windybay.net/post/20/ 참고하기 -->
