@@ -27,4 +27,5 @@ def solution(array, commands):
         new_array.sort()
         answer.append(new_array[command[2]-1])
     
+
     return answer
