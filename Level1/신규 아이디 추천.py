@@ -97,22 +97,29 @@ no	new_id	result
 import re
 def solution(new_id):
     answer =''
+    #1단계
     one = new_id.lower()
+    #2단계
     two = re.sub('[~!@#$%^&*()=+{}:?,<>/\]\[\^]',"",one) # \[ -> [
+    #3단계
     three= re.sub('\.+', '.', two)
+    #4단계
     four = three
     if three[:1] == '.':
         four = three[1:]
     elif three[-1:]=='.':
         four = three[:-1]
+    #5단계
     five = four
-    if five == '':
+    if len(five) == 0:
         five = 'a'
+    #6단계
     six = five
     if len(five) >=16:
         six = five[:15]
         if six[-1:] == ".":
-            six = six[:14]
+            six = six[:-1]
+    #7단계
     seven = six
     if(len(six)==1):
         seven = six+six[-1:]+six[-1:]
