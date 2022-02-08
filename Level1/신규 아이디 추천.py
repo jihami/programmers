@@ -95,35 +95,31 @@ no	new_id	result
 6단계 "abcdefghijklmn.p" → "abcdefghijklmn." → "abcdefghijklmn"
 7단계 변화 없습니다.'''
 import re
+import re
 def solution(new_id):
-    answer =''
+    answer = ''
     #1단계
-    one = new_id.lower()
+    answer = new_id.lower()
     #2단계
-    two = re.sub('[~!@#$%^&*()=+{}:?,<>/\]\[\^]',"",one) # \[ -> [
+    answer = re.sub('[~!@#$%^&*()=+{}:?,<>/\]\[\^]',"",answer) # \[ -> [
     #3단계
-    three= re.sub('\.+', '.', two)
+    answer = re.sub('\.+', '.', answer)
     #4단계
-    four = three
-    if three[:1] == '.':
-        four = three[1:]
-    elif three[-1:]=='.':
-        four = three[:-1]
+    if answer[:1] == '.':
+        answer = answer[1:]
+    elif answer[-1:]=='.':
+        answer = answer[:-1]
     #5단계
-    five = four
-    if len(five) == 0:
-        five = 'a'
+    if len(answer) == 0:
+        answer = 'a'
     #6단계
-    six = five
-    if len(five) >=16:
-        six = five[:15]
-        if six[-1:] == ".":
-            six = six[:-1]
+    if len(answer) >=16:
+        answer = answer[:15]
+        if answer[-1:] == ".":
+            answer = answer[:-1]
     #7단계
-    seven = six
-    if(len(six)==1):
-        seven = six+six[-1:]+six[-1:]
-    elif(len(six)==2):
-        seven = six+six[-1:]
-    answer = seven
+    if(len(answer)==1):
+        answer = answer+answer[-1:]+answer[-1:]
+    elif(len(answer)==2):
+        answer = answer+answer[-1:]
     return answer
