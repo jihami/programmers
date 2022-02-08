@@ -95,7 +95,6 @@ no	new_id	result
 6단계 "abcdefghijklmn.p" → "abcdefghijklmn." → "abcdefghijklmn"
 7단계 변화 없습니다.'''
 import re
-import re
 def solution(new_id):
     answer = ''
     #1단계
@@ -104,10 +103,10 @@ def solution(new_id):
     answer = re.sub('[~!@#$%^&*()=+{}:?,<>/\]\[\^]',"",answer) # \[ -> [
     #3단계
     answer = re.sub('\.+', '.', answer)
-    #4단계
+    #4단계 -> elif를 사용해서 ".hello."이런경우는 못잡은게 80.8점의 원인
     if answer[:1] == '.':
         answer = answer[1:]
-    elif answer[-1:]=='.':
+    if answer[-1:]=='.':
         answer = answer[:-1]
     #5단계
     if len(answer) == 0:
