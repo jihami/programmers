@@ -9,7 +9,6 @@ n	return
 118372	873211
 '''
 def solution(n):
-    n = list(str(n))
-    n.sort(reverse=True)
-    answer = int("".join(n))
-    return answer
+    ls = list(str(int(n)))
+    ls.sort(reverse = True)
+    return int("".join(ls))
